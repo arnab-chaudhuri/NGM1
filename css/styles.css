@@ -2248,22 +2248,16 @@ progress {
   -webkit-overflow-scrolling: touch;
 }
 
-@media (max-width: 575.98px) {
-  .table-responsive-sm {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-}
 
-@media (max-width: 767.98px) {
-  .table-responsive-md {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-}
 
-@media (max-width: 991.98px) {
-  .table-responsive-lg {
+
+
+
+
+
+
+@media (max-width: 1399.98px) {
+  .table-responsive-xxl {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
@@ -2276,12 +2270,61 @@ progress {
   }
 }
 
-@media (max-width: 1399.98px) {
-  .table-responsive-xxl {
+@media (max-width: 991.98px) {
+  .table-responsive-lg {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
 }
+
+@media (max-width: 767.98px) {
+  .table-responsive-md {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+
+  #carouselExampleCaptions .carousel-caption {
+    bottom: 25% !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .feature-button {
+    font-size: x-small !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .table-responsive-sm {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #carouselExampleCaptions .carousel-caption {
+    bottom: 20% !important;
+  }
+}
+
+@media (max-width: 450px) {
+  #carouselExampleCaptions .carousel-caption {
+    bottom: 10% !important;
+  }
+}
+
+@media (max-width: 350px) {
+  #carouselExampleCaptions .carousel-caption {
+    bottom: 10% !important;
+  }
+}
+
+@media (max-width: 250px) {
+  #carouselExampleCaptions .carousel-caption {
+    bottom: 5% !important;
+  }
+}
+
+
 
 .form-label {
   margin-bottom: 0.5rem;
@@ -3830,6 +3873,19 @@ fieldset:disabled .btn {
   left: auto;
 }
 
+
+@media (max-width: 300px) {
+  #carouselExampleCaptions {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 300px) {
+  #carouselExampleCaptions {
+    margin-top: 100px;
+  }
+}
+
 @media (min-width: 576px) {
   .dropdown-menu-sm-start {
     --bs-position: start;
@@ -3887,6 +3943,10 @@ fieldset:disabled .btn {
   .dropdown-menu-lg-end[data-bs-popper] {
     right: 0;
     left: auto;
+  }
+
+  #carouselExampleCaptions {
+    margin-top: 70px;
   }
 }
 
@@ -6967,6 +7027,15 @@ fieldset:disabled .btn {
   padding-bottom: 1.25rem;
   color: #fff;
   text-align: center;
+}
+
+#carouselExampleCaptions .carousel-caption {
+  position: absolute;
+  bottom: 30%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: left;
 }
 
 .carousel-dark .carousel-control-prev-icon,
@@ -12869,6 +12938,7 @@ body {
   }
 
   #mainNav.navbar-shrink .nav-link.active {
+    font-weight: bold;
     color: #64a19d;
     outline: none;
     border-bottom: 0.25rem solid #64a19d;
@@ -13089,8 +13159,13 @@ body {
 }
 
 #section-about {
-  padding-top: 70px !important;
-  padding-bottom: 70px !important;
+  padding-top: 50px !important;
+  padding-bottom: 30px !important;
+}
+
+#section-explore {
+  padding-top: 50px !important;
+  padding-bottom: 30px !important;
 }
 
 /* start ::: slide up */
@@ -13156,7 +13231,8 @@ body {
 /* end ::: gallery */
 
 .card-title {
-  color: #28c8f6 !important;
+  color: #00477B !important;
+  font-weight: bold;
 }
 
 .card-text {
@@ -13166,6 +13242,7 @@ body {
 
 .card-title span {
   color: black !important;
+  /* font-weight: 100; */
 }
 
 /* start ::: feature section */
@@ -13183,10 +13260,12 @@ body {
 }
 
 .feature-button {
-  font-size: xx-small;
+  font-size: small;
   background: #E7C873;
   color: black;
-  padding: 8px 15px;
+  padding: 10px 15px;
+  text-transform: unset !important;
+  letter-spacing: unset !important;
 }
 
 /* end ::: feature section */
@@ -13230,13 +13309,13 @@ body {
 
 #testimonialCarousel .carousel {
   margin: 0 0.5em;
-  border: 0;  
+  border: 0;
 }
 
 #testimonialCarousel .card {
   margin: 0 0.5em;
-  border: 0;  
-  height: 280px;
+  border: 0;
+  height: 300px;
 }
 
 #testimonialCarousel .carousel-control-prev,
@@ -13250,3 +13329,40 @@ body {
 }
 
 /* end ::: testimonial section */
+
+
+@media screen and (max-width: 520px) {
+  .contact-button-out {
+    visibility: hidden;
+    display: none !important;
+  }
+
+  .contact-button-in {
+    visibility: visible;
+    display: block !important;
+  }
+}
+
+.featurs-item img {
+  filter: invert(1) !important;
+}
+
+#bkToTopButton a {
+  background-color: #00477B !important;
+}
+
+#bkToTopButton a {
+  background-color: #00477B !important;
+  font-size: medium;
+  color: #fff;
+}
+/* Back to Top -- START */
+.show-backtotop {
+	opacity: 1;
+	transition: 0.4s;
+}
+
+.hide-backtotop {
+	opacity: 0;
+	transition: 0.4s;
+}

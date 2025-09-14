@@ -22,29 +22,39 @@
 
 <body id="page-top">
     <!-- START ::: Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav">
         <div class="container px-4 px-lg-5">
             <a class="navbar-brand" href="#page-top">
-                <img src="assets\logo.png" class="d-block w-100" alt="..." height="55" width="auto">
+                <img src="assets\logo.png" alt="..." height="55" width="auto">
             </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Rameshvaram 1</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#signup">Nand Mahal</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rameshwaram_1.html">Rameshwaram 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nandd _mahal.html">Nandd Mahal</a></li>
+                    <li>
+                        <span class="navbar-brand d-flex contact-button-in d-none">
+                            <div class="p-1">
+                                <i style="font-size: small;" class="fa-solid fa-phone"></i>
+                                <span style="font-size: small;">
+                                    +91-9243606012
+                                </span>
+                            </div>
+                            <div class="p-1">
+                                <a href="tel:9243606012" class="btn btn-call navbar-brand">Call Now</a>
+                                <!-- <button class="btn btn-call navbar-brand" type="button">
+                                    Call Now
+                                </button> -->
+                            </div>
+                        </span>
+                    </li>
                 </ul>
             </div>
-            <span class="navbar-brand d-flex">
+            <span class="navbar-brand d-flex contact-button-out">
                 <div class="p-1">
                     <i style="font-size: small;" class="fa-solid fa-phone"></i>
                     <span style="font-size: small;">
-                        +91-9999999999
+                        +91-9243606012
                     </span>
                 </div>
                 <div class="p-1">
@@ -54,12 +64,17 @@
                     </button> -->
                 </div>
             </span>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation" style="margin-left: auto;">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
     <!-- END ::: Navigation-->
 
     <!-- START ::: Banner-->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -70,28 +85,28 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="assets\img\bg-signup.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                <img src="assets\img\b1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block" style="left: 7%;">
+                    <a href="#section-explore" class="btn btn-secondary feature-button">Explore Our Projects<i
+                            class='fas fa-arrow-right' style="padding-left:10px"></i></a>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets\img\bg-masthead.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                <img src="assets\img\b2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <a href="#" class="btn btn-secondary feature-button">Explore Our Projects<i
+                            class='fas fa-arrow-right' style="padding-left:10px"></i></a>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets\img\demo-image-01.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                <img src="assets\img\b3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block" style="left: 11%;">
+                    <a href="#" class="btn btn-secondary feature-button">Explore Our Projects<i
+                            class='fas fa-arrow-right' style="padding-left:10px"></i></a>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -100,33 +115,33 @@
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-        </button>
+        </button> -->
     </div>
     <!-- END ::: Banner-->
 
     <!-- START ::: About -->
     <section id="section-about" class="text-center container w-100">
         <div class="row w-100 mx-auto box box-slide-up">
-            <div class="col-12 text-center mx-auto">
-                <h5 class="card-title h5 pb-4"><span>About </span>NMG Estates
+            <div class="col-12">
+                <h5 class="card-title h3 pb-4"><span>About </span>NMG Estates
                 </h5>
-                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-                    a galley of type and scrambled it to make a type specimen book. It has survived not only five
-                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                    popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
-                    more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
-                    Ipsum. Contrary to popular belief.
+                <p class="card-text text-start">Founded in 2025, Nandd Mahal Group brings together over 25 years of
+                    real-estate
+                    expertise in Indore under one umbrella. We’ve built, sold and handed over landmark townships—always
+                    honoring our commitments and evolving through every challenge. Today, Nandd Mahal Group drives
+                    forward a diverse pipeline of projects, united by our core values of integrity, accountability and
+                    innovation.
                 </p>
-                <p class="card-text">
-                    Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45
-                    BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College
-                    in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
-                    and going through the cites of the word in classical literature, discovered the undoubtable source.
-                    Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
-                    of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very
-                    popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes
-                    from a line in section 1.10.32.</p>
+                <ul class="mt-5 text-start">
+                    <li class="mt-2"> <b>Legacy of Delivery</b>: From our inaugural Swasth Nagar colony in 1999 to
+                        today’s Khajrana residences, we’ve consistently completed and handed over communities on time.
+                    </li>
+                    <li class="mt-2"><b>Investor-First Mindset</b>: We work closely with partners to structure
+                        transparent agreements and deliver on
+                        every promise. </li>
+                    <li class="mt-2"><b>Modern Living</b>: Our upcoming and ongoing projects feature contemporary
+                        designs, smart-home features and thoughtfully landscaped spaces.</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -137,74 +152,142 @@
         <div class="tz-gallery pt-0 px-0 col-10 mx-auto box box-slide-up">
             <div class="row w-100 mx-auto">
                 <div class="col-sm-12 col-md-6 p-2">
-                    <a class="lightbox" href="assets/img/gal/1.jpg">
-                        <img src="assets/img/gal/1.jpg" alt="Bridge">
+                    <a class="lightbox" href="assets/img/gal/1.png">
+                        <img src="assets/img/gal/1.png" alt="Bridge">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-3 p-2">
-                    <a class="lightbox" href="assets/img/gal/2.jpg">
-                        <img src="assets/img/gal/2.jpg" alt="Park">
+                    <a class="lightbox" href="assets/img/gal/2.png">
+                        <img src="assets/img/gal/2.png" alt="Park">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-3 p-2">
-                    <a class="lightbox" href="assets/img/gal/3.jpg">
-                        <img src="assets/img/gal/3.jpg" alt="Park">
+                    <a class="lightbox" href="assets/img/gal/3.png">
+                        <img src="assets/img/gal/3.png" alt="Park">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-3 p-2">
-                    <a class="lightbox" href="assets/img/gal/4.jpg">
-                        <img src="assets/img/gal/4.jpg" alt="Park">
+                    <a class="lightbox" href="assets/img/gal/4.png">
+                        <img src="assets/img/gal/4.png" alt="Park">
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-3 p-2">
-                    <a class="lightbox" href="assets/img/gal/5.jpg">
-                        <img src="assets/img/gal/5.jpg" alt="Park">
+                    <a class="lightbox" href="assets/img/gal/5.png">
+                        <img src="assets/img/gal/5.png" alt="Park">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-6 p-2">
-                    <a class="lightbox" href="assets/img/gal/6.jpg">
-                        <img src="assets/img/gal/6.jpg" alt="Park">
+                    <a class="lightbox" href="assets/img/gal/6.png">
+                        <img src="assets/img/gal/6.png" alt="Park">
                     </a>
                 </div>
             </div>
 
         </div>
+
+        <!-- Project lists -->
+        <!-- <div class="col-10 mx-auto box box-slide-up">
+            <h5 class="mb-4">Detailed Project History (For Brokers)</h5>
+            <div class="row pb-3">
+                <div class="col-12 col-lg-3"><b>Year(s)</b></div>
+                <div class="col-12 col-lg-3"><b>Project & Region </b></div>
+                <div class="col-12 col-lg-6"><b>Key Details</b></div>
+            </div>
+            <div class="row pb-5">
+                <div class="col-12 col-lg-3"><span><b>1999–2004</b></span></div>
+                <div class="col-12 col-lg-3"><span><b>Swasth Nagar, Sukhliya</b></span> </div>
+                <div class="col-12 col-lg-6"><span>• 8.5 ac developed into plotted layouts & raw
+                        houses• 100% sold and fully handed over by 2004</span></div>
+            </div>
+            <div class="row pb-5">
+                <div class="col-12 col-lg-3"><span><b>2004–2009</b></span></div>
+                <div class="col-12 col-lg-3"><span><b>Land Bank Expansion,
+                            Sukhliya </b></span> </div>
+                <div class="col-12 col-lg-6"><span>• Incremental acquisition of adjoining parcels
+                        Assembled ~5.5 ac for future township development</span></div>
+            </div>
+            <div class="row pb-5">
+                <div class="col-12 col-lg-3"><span><b>2009–2010</b></span></div>
+                <div class="col-12 col-lg-3"><span><b>Siddhi Vinayak City,
+                            Sukhliya</b></span> </div>
+                <div class="col-12 col-lg-6"><span>• Secured municipal approvals for 750 flats across
+                        7–8 towers• Initial presales launched</span></div>
+            </div>
+            <div class="row pb-5">
+                <div class="col-12 col-lg-3"><span><b>2011–2018</b></span></div>
+                <div class="col-12 col-lg-3"><span><b>Siddhi Vinayak City </b></span> </div>
+                <div class="col-12 col-lg-6"><span>• Delayed by government master-plan road
+                        realignment• Managed investor funding and timelines</span></div>
+            </div>
+            <div class="row pb-5">
+                <div class="col-12 col-lg-3"><span><b>2018–2022</b></span></div>
+                <div class="col-12 col-lg-3"><span><b>Nimar Region Raw
+                            Houses </b></span> </div>
+                <div class="col-12 col-lg-6"><span>• Pivot to turnkey farm-villa developments
+                        <br>• Delivered
+                        cleared-title projects with investor-friendly terms</span></div>
+            </div>
+            <div class="row pb-5">
+                <div class="col-12 col-lg-3"><span><b>2019–Ongoing</b></span></div>
+                <div class="col-12 col-lg-3"><span><b>Rameshwaram I, Indore </b></span> </div>
+                <div class="col-12 col-lg-6"><span>• 64 premium units (39 sold, 25 remaining
+                        <br>• Modern finishes; handovers on schedule</span></div>
+            </div>
+            <div class="row pb-5">
+                <div class="col-12 col-lg-3"><span><b>2021–2022 </b></span></div>
+                <div class="col-12 col-lg-3"><span><b>Siddhi Vinayak City
+                            (Re-documentation) </b></span> </div>
+                <div class="col-12 col-lg-6"><span>• Renegotiated & updated investor agreements
+                        <br> • Preparing for refreshed relaunch</span></div>
+            </div>
+            <div class="row pb-5">
+                <div class="col-12 col-lg-3"><span><b>2025</b></span></div>
+                <div class="col-12 col-lg-3"><span><b>Nandd Mahal
+                            Residences, Khajrana </b></span> </div>
+                <div class="col-12 col-lg-6"><span>• New township bookings open•
+                        <br> JV partnerships with
+                        ISH & others for design & construction excellence</span></div>
+            </div>
+            <div class="row pb-5">
+                <div class="col-12 col-lg-3"><span><b>2025</b></span></div>
+                <div class="col-12 col-lg-3"><span><b>Nandd Mahal
+                            Residences, Khajrana </b></span> </div>
+                <div class="col-12 col-lg-6"><span>• New township bookings open•
+                        <br> JV partnerships with
+                        ISH & others for design & construction excellence</span></div>
+            </div>
+            <div class="row pb-5">
+                <div class="col-12 col-lg-3"><span><b>2025+ </b></span></div>
+                <div class="col-12 col-lg-3"><span><b>Siddhi Vinayak City
+                            (Re-launch) </b></span> </div>
+                <div class="col-12 col-lg-6"><span>• New township bookings open•
+                        <br> • Market relaunch planned in next 3–4 months•
+                        Upgraded masterplan, fresh amenities</span></div>
+            </div>
+        </div> -->
     </div>
     <!-- END ::: Gallery -->
 
     <!-- START ::: Vision and Mission-->
     <section class="vision-section bg-light" id="projects">
-        <div class="container px-4 px-lg-5 col-10 mx-auto box box-slide-up">
+        <div class="container px-4 px-lg-5 col-12 col-md-10 col-12 mx-auto box box-slide-up">
             <!-- Featured Project Row-->
             <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
                 <div class="col-xl-6 col-lg-6"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/vision.jpg"
                         alt="..." /></div>
                 <div class="col-xl-6 col-lg-6">
                     <div class="featured-text text-lg-left">
-                        <h3>Our Vission & Misson</h3>
-                        <p class="text-black-50 mb-0 card-text pt-4">Lorem Ipsum is simply dummy text of the printing
-                            and typesetting
-                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-                            an unknown printer took a galley of type and scrambled it to make a type specimen book. It
-                            has survived not only five centuries, but also the leap into electronic typesetting,
-                            remaining essentially unchanged. It was popularised in the 1960s with the release of
-                            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                            software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <h3>Vision</h3>
+                        <p class="text-black-50 mb-0 card-text pt-4">To be the foremost real-estate pioneer in Central
+                            India—transforming skylines, uplifting communities and setting new benchmarks in
+                            sustainable, smart living.</p>
 
-                        <div class="d-flex flex-row justify-content-around m-3">
-                            <div class="p-2 card-text"><i class="fa-solid fa-check" style="padding-right:15px;"></i>100%
-                                Secure</div>
-                            <div class="p-2 card-text"><i class="fa-solid fa-check" style="padding-right:15px;"></i>100%
-                                Secure</div>
-                        </div>
-                        <div class="d-flex flex-row justify-content-around m-3">
-                            <div class="p-2 card-text"><i class="fa-solid fa-check" style="padding-right:15px;"></i>100%
-                                Secure</div>
-                            <div class="p-2 card-text"><i class="fa-solid fa-check" style="padding-right:15px;"></i>100%
-                                Secure</div>
-                        </div>
-                        <a href="#" target="_blank" class="btn btn-outline-primary mt-3" style="margin-left: auto;">READ
-                            MORE</a>
+                        <h3 class="pt-5">Mission</h3>
+                        <p class="text-black-50 mb-0 card-text pt-4">Nandd Mahal Group develops and delivers
+                            thoughtfully designed residential and mixed-use communities that blend modern amenities,
+                            transparent governance and investor-centric partnerships—while consistently meeting
+                            timelines and exceeding expectations.</p>
+
                     </div>
 
                 </div>
@@ -215,19 +298,17 @@
 
     <!-- START ::: Services-->
     <section class="service-section" id="service">
-        <div class="container px-4 px-lg-5 col-10 mx-auto box box-slide-up">
+        <div class="container px-4 px-lg-5 col-md-10  mx-auto box box-slide-up">
             <!-- Featured Project Row-->
             <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                <div class="col-xl-6 col-lg-6"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/vision.jpg"
+                <div class="col-xl-6 col-lg-6"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/service.jpg"
                         alt="..." /></div>
                 <div class="col-xl-6 col-lg-6 card-text featured-text text-lg-left">
                     <h3>What We Do / Services</h3>
                     <ul class="mt-5">
                         <li class="mt-2">Real estate development</li>
-                        <li class="mt-2">Residential projects </li>
-                        <li class="mt-2">Commercial leasing/sales (if applicable)</li>
-                        <li class="mt-2">Land acquisition (if applicable)</li>
-                        <li class="mt-2">Mention ongoing or upcoming projects</li>
+                        <li class="mt-2">Residential Plots/Flats/Row Houses </li>
+                        <li class="mt-2">Real estate investment plans</li>
                     </ul>
 
                 </div>
@@ -241,50 +322,54 @@
         <div class="container py-5 box box-slide-up" style="padding-bottom: 20px !important;">
             <div class="row g-4 col-10 mx-auto text-light text-center">
                 <h4>Our Values or USP</h4>
-                <span class="p-0 m-0" style="font-size: small;">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit.</span>
+                <!-- <span class="p-0 m-0" style="font-size: small;">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.</span> -->
             </div>
         </div>
 
         <div class="container box box-slide-up">
             <div class="row g-4 mx-auto">
                 <div class="col-md-6 col-lg-3">
-                    <div class="featurs-item text-center rounded pt-4">
-                        <img src="assets\img\ico\icon1.png" class="d-block mx-auto" height="30" alt="...">
+                    <div class="text-center rounded pt-4">
+                        <img src="assets\img\ico\ico3.png" class="d-block mx-auto" height="30" alt="...">
                         <div class="featurs-content text-center text-light pt-2">
-                            <span style="font-size: small;">Quality construction</span>
-                            <p class="pt-2" style="font-size: x-small;">Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry.</p>
+                            <span style="font-size: small;">25+ Years of Legacy
+                            </span>
+                            <p class="pt-2" style="font-size: x-small;">Decades of trusted real estate experience across
+                                Indore and Central India.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="featurs-item text-center rounded pt-4">
-                        <img src="assets\img\ico\icon2.png" class="d-block mx-auto" height="30" alt="...">
+                    <div class="text-center rounded pt-4">
+                        <img src="assets\img\ico\ico2.png" class="d-block mx-auto" height="30" alt="...">
                         <div class="featurs-content text-center text-light pt-2">
-                            <span style="font-size: small;">Customer focus</span>
-                            <p class="pt-2" style="font-size: x-small;">Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry.</p>
+                            <span style="font-size: small;">Reliable Partnerships
+                            </span>
+                            <p class="pt-2" style="font-size: x-small;">Collaborating with trusted names to ensure
+                                quality and sustainability.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="featurs-item text-center rounded pt-4">
-                        <img src="assets\img\ico\icon3.png" class="d-block mx-auto" height="30" alt="...">
+                    <div class="text-center rounded pt-4">
+                        <img src="assets\img\ico\ico4.png" class="d-block mx-auto" height="30" alt="...">
                         <div class="featurs-content text-center text-light pt-2">
-                            <span style="font-size: small;">Timely delivery</span>
-                            <p class="pt-2" style="font-size: x-small;">Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry.</p>
+                            <span style="font-size: small;">Legal compliance, transparency</span>
+                            <p class="pt-2" style="font-size: x-small;">Clear documentation and a strong track record of
+                                fulfilling commitments.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="featurs-item text-center rounded pt-4">
-                        <img src="assets\img\ico\icon4.png" class="d-block mx-auto" height="30" alt="...">
+                    <div class="text-center rounded pt-4">
+                        <img src="assets\img\ico\ico1.png" class="d-block mx-auto" height="30" alt="...">
                         <div class="featurs-content text-center text-light pt-2">
-                            <span style="font-size: small;">Legal compliance, transparency etc.</span>
-                            <p class="pt-2" style="font-size: x-small;">Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry.</p>
+                            <span style="font-size: small;">Future-Ready Vision</span>
+                            <p class="pt-2" style="font-size: x-small;">A strong pipeline of upcoming projects aligned
+                                with modern living needs.</p>
                         </div>
                     </div>
                 </div>
@@ -294,27 +379,27 @@
     <!-- END ::: USP -->
 
     <!-- START ::: About -->
-    <section id="section-about" class="text-center container w-100">
+    <section id="section-explore" class="text-center container w-100">
         <div class="row w-100 mx-auto">
-            <div class="col-12 text-center mx-auto">
-                <h5 class="card-title h5 pb-4"><span>Featured </span>Projects Preview
-                </h5>
-                <div class="card box box-slide-up">
+            <div class="col-12 text-center mx-auto box box-slide-up">
+                <h4 class="card-title h3 pb-5"><span>Featured </span>Projects Preview
+                </h4>
+                <div class="card">
                     <div class="card-body p-0 feature-parent-container">
                         <img src="assets\img\feature-1.jpg" width="100%" style="max-height: 350px; object-fit: cover;">
                         <div class="feature-centered">
-                            <h4 class="text-light">Rameshvaram 1</h4>
-                            <a href="#" class="btn btn-secondary feature-button">Explore More<i
+                            <h4 class="text-light">Rameshwaram 1</h4>
+                            <a href="rameshwaram_1.html" class="btn btn-secondary feature-button">Explore More<i
                                     class='fas fa-arrow-right' style="padding-left:10px"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="card mt-3 box box-slide-up">
+                <div class="card mt-3">
                     <div class="card-body p-0 feature-parent-container">
-                        <img src="assets\img\feature-1.jpg" width="100%" style="max-height: 350px; object-fit: cover;">
+                        <img src="assets\img\feature-2.jpg" width="100%" style="max-height: 350px; object-fit: cover;">
                         <div class="feature-centered">
-                            <h4 class="text-light">Rameshvaram 1</h4>
-                            <a href="#" class="btn btn-secondary feature-button">Explore More<i
+                            <h4 class="text-light">Nandd Mahal</h4>
+                            <a href="nandd _mahal.html" class="btn btn-secondary feature-button">Explore More<i
                                     class='fas fa-arrow-right' style="padding-left:10px"></i></a>
                         </div>
                     </div>
@@ -328,7 +413,7 @@
     <div class="container bg-body-tertiary py-3">
         <div id="testimonialCarousel" class="carousel box box-slide-up">
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <!-- <div class="carousel-item active">
                     <div class="card shadow-sm rounded-3 p-2">
                         <div class="quotes display-2 text-body-tertiary">
                             <i class="bi bi-quote"></i>
@@ -339,26 +424,22 @@
                                     <img src="assets\img\usr\avatar1.png" alt="">
                                 </div>
                                 <div class="flex-grow-1">
-                                    <h6 class="fw-bold">Cameron Williamson</h6>
-                                    <span class="text-dark">Designer</span>
-                                </div>
-                                <div class="" style="padding-left: 20px; position: relative; top:-20px;">
-                                    <i class="fa-solid fa-quote-left" style="font-size: 50px;"></i>
+                                    <h6 class="fw-bold">Mr. Paras Saraogi
+                                    </h6>
+                                    <span class="text-dark">Founder, Indore Sky Homes</span>
                                 </div>
                             </div>
                             <p class="card-text pt-4">
                                 <span style="position: relative;font-size: large;">❝</span>
-                                Searches for multiplexes, property comparisons,
-                                and the loan estimator. Works great. Lorem
-                                ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et
-                                dores.
+                                NMG Estates is driven by vision and values. Their ability to blend real estate with
+                                community and culture is commendable. Whether it’s investment or end-use, their projects
+                                offer confidence and clarity.
                                 <span style="position: relative;font-size: large;">❞</span>
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
+                </div> -->
+                <div class="carousel-item active">
                     <div class="card shadow-sm rounded-3 p-2">
                         <div class="quotes display-2 text-body-tertiary">
                             <i class="bi bi-quote"></i>
@@ -369,26 +450,20 @@
                                     <img src="assets\img\usr\avatar2.png" alt="">
                                 </div>
                                 <div class="flex-grow-1">
-                                    <h5 class="fw-bold">Esther Howard</h5>
-                                    <span class="text-dark">Marketing</span>
-                                </div>
-                                <div class="" style="padding-left: 20px; position: relative; top:-20px;">
-                                    <i class="fa-solid fa-quote-left" style="font-size: 50px;"></i>
+                                    <h5 class="fw-bold">Mr. Dilip Thakur </h5>
+                                    <span class="text-dark">Renowned Interior Designer, Indore </span>
                                 </div>
                             </div>
                             <p class="card-text pt-4">
                                 <span style="position: relative;font-size: large;">❝</span>
-                                Sed ut perspiciatis unde omnis iste natus error
-                                sit voluptatem accusantium doloremque
-                                laudantium, totam rem aperiam, eaque ipsa
-                                quae ab illo inventore veritatis et quasi
-                                architecto beatae vitae.
+                                What I appreciate about NMG Estates is their design sensitivity. Every space they
+                                develop feels intentional — well-thought-out for both aesthetics and lifestyle.
                                 <span style="position: relative;font-size: large;">❞</span>
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <!-- <div class="carousel-item">
                     <div class="card shadow-sm rounded-3 p-2">
                         <div class="quotes display-2 text-body-tertiary">
                             <i class="bi bi-quote"></i>
@@ -396,28 +471,24 @@
                         <div class="card-body">
                             <div class="d-flex align-items-center">
                                 <div>
-                                    <img src="assets\img\usr\avatar3.png" alt="">
+                                    <img src="assets\img\usr\avatar1.png" alt="">
                                 </div>
                                 <div class="flex-grow-1">
-                                    <h5 class="fw-bold">Devon Lane</h5>
-                                    <span class="text-dark">Developer</span>
-                                </div>
-                                <div class="" style="padding-left: 20px; position: relative; top:-20px;">
-                                    <i class="fa-solid fa-quote-left" style="font-size: 50px;"></i>
+                                    <h5 class="fw-bold">Mr. Anurag Vijayvargiya
+                                    </h5>
+                                    <span class="text-dark">Partner, Carry Fast Corporation</span>
                                 </div>
                             </div>
                             <p class="card-text pt-4">
                                 <span style="position: relative;font-size: large;">❝</span>
-                                Nemo enim ipsam voluptatem quia voluptas sit
-                                aspernatur aut odit aut fugit, sed quia
-                                consequuntur magni dolores eos qui ratione
-                                voluptatem sequi nesciunt. Neque porro
-                                quisquam est.
+                                Trust and timely delivery are everything in business. NMG Estates has built a reputation
+                                on both. Their practical approach and genuine commitment set them apart in today’s
+                                market.
                                 <span style="position: relative;font-size: large;">❞</span>
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="carousel-item">
                     <div class="card shadow-sm rounded-3 p-2">
                         <div class="quotes display-2 text-body-tertiary">
@@ -427,17 +498,16 @@
                             <div class="d-flex align-items-center">
                                 <img src="assets\img\usr\avatar1.png" alt="">
                                 <div class="flex-grow-1">
-                                    <h5 class=" fw-bold">Jane Doe</h5>
-                                    <span class="text-dark">Designer</span>
-                                </div>
-                                <div class="" style="padding-left: 20px; position: relative; top:-20px;">
-                                    <i class="fa-solid fa-quote-left" style="font-size: 50px;"></i>
+                                    <h5 class=" fw-bold">Mr. Sanjay Jain</h5>
+                                    <span class="text-dark">GM, Apollo DB City
+                                    </span>
                                 </div>
                             </div>
-                            <p class="card-text pt-4"> <span style="position: relative;font-size: large;">❝</span>Some
-                                quick example text to build on the card title and make up the
-                                bulk of
-                                the card's content.<span style="position: relative;font-size: large;">❞</span></p>
+                            <p class="card-text pt-4"> <span style="position: relative;font-size: large;">❝</span>I’ve
+                                worked with several developers, but what makes NMG Estates stand out is their
+                                human-centric planning. They don’t just build spaces — they build communities that
+                                people are proud to call home.<span
+                                    style="position: relative;font-size: large;">❞</span></p>
                         </div>
                     </div>
                 </div>
@@ -450,17 +520,40 @@
                             <div class="d-flex align-items-center">
                                 <img src="assets\img\usr\avatar1.png" alt="">
                                 <div class="flex-grow-1">
-                                    <h5 class=" fw-bold">Jane Doe</h5>
-                                    <span class="text-dark">Designer</span>
-                                </div>
-                                <div class="" style="padding-left: 20px; position: relative; top:-20px;">
-                                    <i class="fa-solid fa-quote-left" style="font-size: 50px;"></i>
+                                    <h5 class=" fw-bold">Mr. Manish Nagar</h5>
+                                    <span class="text-dark">Owner, Selmore Appliances
+                                    </span>
                                 </div>
                             </div>
-                            <p class="card-text pt-4"> <span style="position: relative;font-size: large;">❝</span>Some
-                                quick example text to build on the card title and make up the
-                                bulk of
-                                the card's content.<span style="position: relative;font-size: large;">❞</span></p>
+                            <p class="card-text pt-4"> <span style="position: relative;font-size: large;">❝</span>NMG
+                                Estates understands the pulse of modern buyers. Their projects strike a balance — prime
+                                location, comfort, and future value, all wrapped in honest delivery.<span
+                                    style="position: relative;font-size: large;">❞</span></p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="carousel-item">
+                    <div class="card shadow-sm rounded-3 p-2">
+                        <div class="quotes display-2 text-body-tertiary">
+                            <i class="bi bi-quote"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <img src="assets\img\usr\avatar1.png" alt="">
+                                <div class="flex-grow-1">
+                                    <h5 class=" fw-bold">Mr. Hemendra Singh Ranawat</h5>
+                                    <span class="text-dark">Industrialist
+                                    </span>
+                                </div>
+                            </div>
+                            <p class="card-text pt-4"> <span style="position: relative;font-size: large;">❝</span>As an
+                                industrialist, I look for stability, transparency, and growth. NMG Estates has proven to
+                                be a group that prioritizes all three, and that's rare in this sector.<span
+                                    style="position: relative;font-size: large;">❞</span></p>
                         </div>
                     </div>
                 </div>
@@ -473,17 +566,15 @@
                             <div class="d-flex align-items-center">
                                 <img src="assets\img\usr\avatar1.png" alt="">
                                 <div class="flex-grow-1">
-                                    <h5 class=" fw-bold">Jane Doe</h5>
-                                    <span class="text-dark">Designer</span>
-                                </div>
-                                <div class="" style="padding-left: 20px; position: relative; top:-20px;">
-                                    <i class="fa-solid fa-quote-left" style="font-size: 50px;"></i>
+                                    <h5 class=" fw-bold">Mr. Manoj Rao</h5>
+                                    <span class="text-dark">Wellness Coach
+                                    </span>
                                 </div>
                             </div>
-                            <p class="card-text pt-4"> <span style="position: relative;font-size: large;">❝</span>Some
-                                quick example text to build on the card title and make up the
-                                bulk of
-                                the card's content.<span style="position: relative;font-size: large;">❞</span></p>
+                            <p class="card-text pt-4"> <span style="position: relative;font-size: large;">❝</span>A good
+                                home impacts mental and emotional wellbeing — and NMG Estates clearly understands that.
+                                Their focus on green spaces, peace, and positive energy is something I truly
+                                respect.<span style="position: relative;font-size: large;">❞</span></p>
                         </div>
                     </div>
                 </div>
@@ -496,17 +587,15 @@
                             <div class="d-flex align-items-center">
                                 <img src="assets\img\usr\avatar1.png" alt="">
                                 <div class="flex-grow-1">
-                                    <h5 class=" fw-bold">Jane Doe</h5>
-                                    <span class="text-dark">Designer</span>
-                                </div>
-                                <div class="" style="padding-left: 20px; position: relative; top:-20px;">
-                                    <i class="fa-solid fa-quote-left" style="font-size: 50px;"></i>
+                                    <h5 class=" fw-bold">Mr. Sunil Jain</h5>
+                                    <span class="text-dark">International Coach, Art of Living
+                                    </span>
                                 </div>
                             </div>
-                            <p class="card-text pt-4"> <span style="position: relative;font-size: large;">❝</span>Some
-                                quick example text to build on the card title and make up the
-                                bulk of
-                                the card's content.<span style="position: relative;font-size: large;">❞</span></p>
+                            <p class="card-text pt-4"> <span style="position: relative;font-size: large;">❝</span>NMG
+                                Estates reflects a deeper intent — to build homes that align with lifestyle, values, and
+                                inner peace. Their projects have soul, not just structure.<span
+                                    style="position: relative;font-size: large;">❞</span></p>
                         </div>
                     </div>
                 </div>
@@ -519,17 +608,15 @@
                             <div class="d-flex align-items-center">
                                 <img src="assets\img\usr\avatar1.png" alt="">
                                 <div class="flex-grow-1">
-                                    <h5 class=" fw-bold">Jane Doe</h5>
-                                    <span class="text-dark">Designer</span>
-                                </div>
-                                <div class="" style="padding-left: 20px; position: relative; top:-20px;">
-                                    <i class="fa-solid fa-quote-left" style="font-size: 50px;"></i>
+                                    <h5 class=" fw-bold">Mr. Manish Patidar</h5>
+                                    <span class="text-dark">Founder, Rameshvaram Group
+                                    </span>
                                 </div>
                             </div>
-                            <p class="card-text pt-4"> <span style="position: relative;font-size: large;">❝</span>Some
-                                quick example text to build on the card title and make up the
-                                bulk of
-                                the card's content.<span style="position: relative;font-size: large;">❞</span></p>
+                            <p class="card-text pt-4"> <span style="position: relative;font-size: large;">❝</span>Having
+                                worked closely with the team, I can say NMG Estates is building more than real estate —
+                                they’re building trust, integrity, and legacy. It’s a team that walks the talk.<span
+                                    style="position: relative;font-size: large;">❞</span></p>
                         </div>
                     </div>
                 </div>
@@ -542,17 +629,15 @@
                             <div class="d-flex align-items-center">
                                 <img src="assets\img\usr\avatar1.png" alt="">
                                 <div class="flex-grow-1">
-                                    <h5 class=" fw-bold">Jane Doe</h5>
-                                    <span class="text-dark">Designer</span>
-                                </div>
-                                <div class="" style="padding-left: 20px; position: relative; top:-20px;">
-                                    <i class="fa-solid fa-quote-left" style="font-size: 50px;"></i>
+                                    <h5 class=" fw-bold">Mr. Manish Nagar</h5>
+                                    <span class="text-dark">Owner, Selmore Appliances
+                                    </span>
                                 </div>
                             </div>
-                            <p class="card-text pt-4"> <span style="position: relative;font-size: large;">❝</span>Some
-                                quick example text to build on the card title and make up the
-                                bulk of
-                                the card's content.<span style="position: relative;font-size: large;">❞</span></p>
+                            <p class="card-text pt-4"> <span style="position: relative;font-size: large;">❝</span>NMG
+                                Estates understands the pulse of modern buyers. Their projects strike a balance — prime
+                                location, comfort, and future value, all wrapped in honest delivery.<span
+                                    style="position: relative;font-size: large;">❞</span></p>
                         </div>
                     </div>
                 </div>
@@ -579,8 +664,10 @@
                     <!-- <i class="far fa-paper-plane fa-2x mb-4 text-dark"></i> -->
                     <img src="assets\img\mail2.png" class="d-block mx-auto fa-2x mb-4" alt="..." height="45"
                         width="auto">
-                    <h2 class="text-dark mb-4">Stay Up to Date</h2>
-                    <span>Subscribe to our newsletter to receive our weekly feed.</span>
+                    <h2 class="text-dark mb-4">Enquery Form</h2>
+                    <span>Please send us your mail id here. You will get a response within 24 hours.
+                        or, you can directly call or Whatsapp us <span class="h4 fw-bold"
+                            style="white-space: nowrap;">+91 9243606012 </span></span>
                     <!-- * * * * * * * * * * * * * * *-->
                     <!-- * * SB Forms Contact Form * *-->
                     <!-- * * * * * * * * * * * * * * *-->
@@ -588,15 +675,15 @@
                     <!-- To make this form functional, sign up at-->
                     <!-- https://startbootstrap.com/solution/contact-forms-->
                     <!-- to get an API token!-->
-                    <form class="form-signup pt-4" name="contactForm">
+                    <form class="form-signup" name="contactForm">
                         <div class="row input-group-newsletter">
-                            <div class="col">
+                            <div class="col-12 col-md-8 pt-4">
                                 <input class="form-control" id="contactEmail" type="email" name="email"
-                                    placeholder="Enter email address..."/>
+                                    placeholder="Enter email address..." />
                             </div>
-                            <div class="col-auto">
+                            <div class="col-12 col-md-4 pt-4">
                                 <button class="btn btn-primary" id="btnContactSumbit" type="submit">Notify
-                                    Me!</button>
+                                    Us!</button>
                             </div>
                         </div>
                         <!-- <div class="invalid-feedback mt-2" data-sb-feedback="contactEmail:required">An email is
@@ -612,6 +699,7 @@
             </div>
         </div>
     </section>
+
     <!-- Contact-->
     <section class="contact-section bg-black">
         <div class="container px-4 px-lg-5 box box-slide-up">
@@ -629,27 +717,39 @@
                             </div>
                         </div>
                     </div> -->
-                    <div class="d-flex flex-column mt-3" style="color: #fff;">
+                    <div class="d-flex flex-column" style="color: #fff;">
                         <div class="p-2">
                             <div class="d-flex">
-                                <div class="p-2 w-50">Contact Us</div>
-                                <div class="p-2 w-50">Our Address</div>
+                                <div class="w-100 font-weight-bold"
+                                    style="font-weight: 900; text-decoration: underline;">Contact Us</div>
                             </div>
                             <div class="d-flex">
-                                <div class="p-2 w-50">hi@justhome.com
-                                    (123) 456-7890</div>
-                                <div class="p-2 w-50">99 Fifth Avenue, 3rd Floor
-                                    San Francisco, CA 1980</div>
+                                <div class="mt-2 w-100">business@nmgestates.com <br>
+                                    +91-9243606012</div>
                             </div>
                         </div>
                         <div class="p-2">
-                            <div class="social d-flex justify-content-center col-8 mx-auto">
-                                <div class="my-auto"><span class="my-auto">Follow Us</span></div>
-                                <div class="flex-grow-1 d-flex justify-content-around">
-                                    <div><a class="mx-2" href="#!"><i class="fab fa-twitter text-light"></i></a></div>
-                                    <div><a class="mx-2" href="#!"><i class="fab fa-facebook-f text-light"></i></a>
+                            <div class="d-flex">
+                                <div class="w-100 font-weight-bold"
+                                    style="font-weight: 900; text-decoration: underline;">Our Address</div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="mt-2 w-100">996/1, Khasra no. 991, 1/2,
+                                    Khajrana Rd, near Ganesh Mandir,
+                                    Khajrana, Indore, Madhya Pradesh 452016</div>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <div class="d-flex">
+                                <div class="mt-2 font-weight-bold" style="font-weight: 900;">Follow Us</div>
+                                <div class="mt-1 px-4 d-flex" style="font-size: x-large;">
+                                    <div><a class="mx-2" target="_blank"
+                                            href="https://www.instagram.com/nmgestates?igsh=MWxtOTNxZnZ3Nms5Yw=="><i
+                                                class="fab fa-instagram text-light"></i></a></div>
+                                    <div style="margin-left: 20px;"><a class="mx-2" target="_blank"
+                                            href="https://www.facebook.com/profile.php?id=61575296642566&mibextid=ZbWKwL"><i
+                                                class="fab fa-facebook-f text-light"></i></a>
                                     </div>
-                                    <div><a class="mx-2" href="#!"><i class="fab fa-github text-light"></i></a></div>
                                 </div>
                             </div>
                         </div>
@@ -658,16 +758,20 @@
                 </div>
 
                 <div class="col-md-7 mb-3 mb-md-0">
-                    <iframe src="https://maps.google.com/maps?q=35.856737, 10.606619&z=15&output=embed" width="100%"
-                        height="250px" frameborder="0" style="border:0"></iframe>
+                    <!-- <iframe src="https://maps.google.com/maps?q=22.7248619,75.8821042&z=15&output=embed" width="100%"
+                        height="250px" frameborder="0" style="border:0"></iframe> -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.9034807166913!2d75.9082725!3d22.731828599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e368a1c53e2b%3A0xbc76153fa27fcacb!2sNandd%20Mahal!5e0!3m2!1sen!2sin!4v1750010067673!5m2!1sen!2sin"
+                        width="100%" height="250px" frameborder="0" style="border:0"></iframe>
                 </div>
             </div>
 
         </div>
     </section>
+
     <!-- Footer-->
     <footer class="footer bg-black small text-center text-white-50">
-        <div class="container px-4 px-lg-5 box box-slide-up">Copyright &copy; 2025. Nanddmahalgroup</div>
+        <div class="container px-4 px-lg-5">Copyright &copy; 2025. Nanddmahalgroup</div>
     </footer>
 
     <!-- modal contact form submit confirmation -->
@@ -698,12 +802,35 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 
+    <!-- start ::: back to top -->
+    <div id="bkToTopButton" class="position-fixed bottom-0 end-0 mb-3 me-3 hide-backtotop">
+        <a class="btn btn-bd-primary p-2 d-flex align-items-center " type="button" aria-expanded="false"
+            onclick="scrollHome('');">
+            <i class="fa fa-home" aria-hidden="true"></i>
+        </a>
+    </div>
+    <script src="js/back-to-top.js"></script>
+    <!-- end ::: back to top -->
+
     <!-- start ::: for Image gallery -->
     <script src="js/baguetteBox.min.js"></script>
     <script>
         baguetteBox.run('.tz-gallery');
     </script>
     <!-- end ::: for Image gallery -->
+
+
+    <script>
+        $(document).ready(function () {
+            $(".carousel").carousel({
+                // interval: true,
+                // pause: true
+            });
+            $('.carousel .carousel-inner').on('dragstart', 'a', function () {
+                return false;
+            });
+        });
+    </script>
 
     <!-- start ::: for slide up -->
     <script>
